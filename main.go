@@ -7,9 +7,6 @@ import (
 	"os"
 )
 
-func main() {
-	WordbyWordScan()
-}
 func WordbyWordScan() {
 	file, err := os.Open("file.txt")
 	if err != nil {
@@ -27,4 +24,8 @@ func WordbyWordScan() {
 		log.Fatal(err)
 	}
 	fmt.Printf("%d\n", count)
+}
+
+func main() {
+	WordbyWordScan()
 }
